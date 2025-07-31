@@ -12,7 +12,7 @@ body {
   display: block;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  background-color: rgb(86, 102, 86);
+  background-color: rgb(86, 87, 102);
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ footer .credits div {
     width: 15px;
   }
 
-    .message .box {
+  .message .box {
     max-width: 75%;
   }
 }
