@@ -114,6 +114,7 @@ body {
 .nav-icons i {
   display: inline-block;
   padding: 5px;
+  cursor: pointer;
 }
 
 /* Conversation */
@@ -223,6 +224,7 @@ footer .credits div {
 
   #sidebar {
     position: static;
+    margin: 0;
     margin-bottom: 10px;
   }
 
