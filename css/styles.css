@@ -38,6 +38,9 @@ body {
   text-align: start;
 }
 
+#sidebar div {
+  margin-bottom: 0.8em;
+}
 
 #screen {
   display: inline-block;
@@ -219,8 +222,8 @@ footer .credits div {
   }
 
   #sidebar {
-    margin: 10px 0px 10px 0;
-    position: relative;
+    position: static;
+    margin-bottom: 10px;
   }
 
   .nav-icons i {
