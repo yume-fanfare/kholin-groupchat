@@ -121,7 +121,7 @@ body {
 
 .conversation {
   background: #efe7dd url("https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg") repeat;
-padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 /* Messages */
@@ -139,6 +139,8 @@ padding-bottom: 50px;
 }
 
 .message .box {
+  display: flex;
+  flex-direction: column;
   max-width: 65%;
   padding: 12px;
   background: whitesmoke;
@@ -150,6 +152,7 @@ padding-bottom: 50px;
 .message .time {
   margin-top: 2px;
   text-align: end;
+  align-self: end;
   font-size: 0.8em;
   color: #aaa;
 }
@@ -170,6 +173,29 @@ padding-bottom: 50px;
 
 .message .name {
   font-size: smaller;
+}
+
+.message.sent {
+  display: flex;
+  justify-content: end;
+}
+
+.message .box.sent {
+  background-color: #D9FDD3;
+  padding-right: 20px;
+}
+
+.message .box.sent p {
+  justify-content: end;
+}
+
+.message .box.sent span {
+  padding-left: 15px;
+  text-wrap: nowrap;
+}
+
+.message .box.sent i {
+  color: rgb(57, 206, 255);
 }
 
 /*NAME COLOR*/
