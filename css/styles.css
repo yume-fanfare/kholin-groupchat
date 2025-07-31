@@ -258,4 +258,8 @@ footer .credits div {
     padding: 15px;
     width: 15px;
   }
+
+    .message .box {
+    max-width: 75%;
+  }
 }
