@@ -1,261 +1,219 @@
-html {
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png+xml" href="" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/74ed9b1a3d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <meta name="description" content="A Stormlight Archive Fanfic & Podfic">
+
+  <!--
+  CODE REFERENCED
+
+  https://www.codewithfaraz.com/content/114/create-a-whatsapp-web-interface-clone-using-html-and-css#css-code
+  https://codepen.io/swaibu/pen/QxJjwN?editors=1100
+-->
+
+  <title>lo q sea</title>
+</head>
+
+<body>
+
+  <div id="header">
+    <h1>título</h1>
+    <h2>a stormlight archive fanfic and podfic</h2>
+  </div>
+
+  <content>
+    <div id="sidebar">
+      <div>
+        <p><b>Notes:</b></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magnam pariatur distinctio maxime sequi fugiat
+          ipsum provident corporis tempore repellat earum unde at harum, eos ab quas dolores voluptate atque!</p>
+      </div>
+      <div>
+        <b>Credits</b>
+
+        <div>
+          <p><b>Writer</b></p>
+          <p>
+            <a href="">yuno</a>
+          </p>
+        </div>
+
+        <div>
+          <b>Voices</b>
+          <p><a href="">jaimito</a> as Adolin</p>
+          <p><a href="">jaimito</a> as Adolin</p>
+          <p><a href="">jaimito</a> as Adolin</p>
+          <p><a href="">jaimito</a> as Adolin</p>
+          <p><a href="">jaimito</a> as Adolin</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="screen">
+
+      <div class="top-bar">
+        <div class="group-info">
+          <p>←</p>
+          <div class="group-pic">
+            <img src="https://catinaflat.blog/wp-content/uploads/2022/05/famous-tabby-cats.jpg" alt="">
+          </div>
+          <div class="group-info-text">
+            <p class="name">The Kholin Family</p>
+            <p class="members">Adolin, Dalinar, Gavilar, Kaladin, Renarin, Shallan</p>
+          </div>
+        </div>
+
+        <div class="nav-icons">
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-video"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
 
 
-[id] {
-  scroll-margin-top: 5em;
-}
+      <div class="conversation">
+        <div class="conversation-container">
+
+          <div id="message1" class="message">
+            <div class="pfp">
+              <img src="https://catinaflat.blog/wp-content/uploads/2022/05/famous-tabby-cats.jpg" alt="">
+            </div>
+            <div class="box">
+              <p class="name adolin"><b>Adolin</b></p>
+              <p>kljasdhflkjshdflkj
+              </p>
+              <p class="time">10:03</p>
+            </div>
+          </div>
 
 
-body {
-  display: block;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  background-color: rgb(86, 102, 86);
-  text-align: center;
-}
-
-#header {
-  display: block;
-  width: 100%;
-  padding: 10%;
-  text-align: start;
-  color: white;
-}
-
-#sidebar {
-  display: inline-block;
-  position: -webkit-sticky;
-  position: sticky;
-  width: 20%;
-  top: 10px;
-  padding: 20px;
-  margin: 10px;
-  background-color: aliceblue;
-  border-radius: 25px;
-  vertical-align: top;
-  text-align: start;
-}
-
-#sidebar div {
-  margin-bottom: 0.8em;
-}
-
-#screen {
-  display: inline-block;
-  width: 40%;
-  text-align: start;
-  border-radius: 25px;
-}
-
-/*TOP BAR*/
-
-.top-bar {
-  display: flex;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background: whitesmoke;
-  color: black;
-  padding: 3%;
-  font-size: 24px;
-  box-shadow: 0 10px 10px -10px #0000004b;
-
-}
+          <div id="message2" class="message">
+            <div class="pfp">
+              <img src="https://catinaflat.blog/wp-content/uploads/2022/05/famous-tabby-cats.jpg" alt="">
+            </div>
+            <div class="box">
+              <p class="name shallan"><b>Shallan</b></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error quam cumque sequi
+                excepturi, possimus blanditiis deserunt eaque nostrum sed itaque fugiat! Cum harum mollitia qui corrupti
+                voluptatum, omnis recusandae.</p>
+              <p class="time">10:03</p>
+            </div>
+          </div>
 
 
-.group-info {
-  display: flex;
-  width: 60%;
-  align-items: center;
-  justify-content: space-around;
-}
+          <div id="message3" class="message">
+            <div class="pfp">
+              <img src="https://catinaflat.blog/wp-content/uploads/2022/05/famous-tabby-cats.jpg" alt="">
+            </div>
+            <div class="box">
+              <p class="name renarin"><b>Renarin</b></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, corrupti.
+              </p>
+              <p class="time">10:03</p>
+            </div>
+          </div>
 
-.group-pic {
-  display: block;
-  min-width: 50px;
-  width: 50px;
-  height: 50px;
-}
-
-.group-pic img,
-.pfp img {
-  border-radius: 50%;
-  width: 100%;
-}
-
-.group-info-text .name {
-  font-size: 24px;
-  font-weight: 400;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.group-info-text .members {
-  display: block;
-  font-size: 15px;
-  font-weight: 200;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 250px;
-}
+          <div id="message4" class="message">
+            <div class="pfp">
+            </div>
+            <div class="box">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, harum! Nulla aut blanditiis commodi
+                odio porro molestias harum, amet modi, vitae aliquid aspernatur esse quis ipsam numquam
+                necessitatibus.
+                Cumque, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora quibusdam ratione
+                nobis fuga voluptate modi eius inventore iure harum accusantium incidunt facere animi quis cum
+                deleniti,
+                illo earum. Error!</p>
+            </div>
+          </div>
 
 
-.nav-icons {
-  justify-self: flex-end;
-}
-
-.nav-icons i {
-  display: inline-block;
-  padding: 5px;
-  cursor: pointer;
-}
-
-/* Conversation */
-
-.conversation {
-  background: #efe7dd url("https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg") repeat;
-  padding-bottom: 50px;
-}
-
-/* Messages */
-
-.message {
-  display: flex;
-  width: 100%;
-  padding: 5px;
-}
-
-.message .pfp {
-  display: block;
-  width: 20px;
-  margin-right: 5px;
-}
-
-.message .box {
-  display: flex;
-  flex-direction: column;
-  max-width: 65%;
-  padding: 12px;
-  background: whitesmoke;
-  border-radius: 10px;
-  font-size: 0.9em;
-  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-.message .time {
-  margin-top: 2px;
-  text-align: end;
-  align-self: end;
-  font-size: 0.8em;
-  color: #aaa;
-}
-
-.message .quote {
-  display: block;
-  background-color: rgba(211, 211, 211, 0.274);
-  padding: 5px;
-  border-radius: 2px;
-  margin-bottom: 5px;
-  text-decoration: none;
-  color: black;
-}
-
-.message .name {
-  margin-bottom: 5px;
-}
-
-.message .name {
-  font-size: smaller;
-}
-
-.message.sent {
-  display: flex;
-  justify-content: end;
-}
-
-.message .box.sent {
-  background-color: #D9FDD3;
-  padding-right: 20px;
-}
-
-.message .box.sent p {
-  justify-content: end;
-}
-
-.message .box.sent span {
-  padding-left: 15px;
-  text-wrap: nowrap;
-}
-
-.message .box.sent i {
-  color: rgb(57, 206, 255);
-}
-
-/*NAME COLOR*/
-
-.adolin {
-  color: rgb(96, 96, 163);
-}
-
-.shallan {
-  color: rgb(218, 109, 21);
-}
-
-.renarin {
-  color: rgb(145, 18, 18)
-}
-
-footer {
-  display: block;
-  width: 100%;
-  padding: 25px;
-  background-color: rgb(48, 46, 46);
-  color: white;
-  text-align: start;
-  margin-top: 50px;
-}
-
-footer a {
-  color: rgb(182, 221, 255);
-}
-
-footer .credits {
-  display: block;
-  width: 50%;
-}
-
-footer .credits div {
-  padding: 10px;
-}
+          <div id="message5" class="message">
+            <div class="pfp">
+              <img src="https://catinaflat.blog/wp-content/uploads/2022/05/famous-tabby-cats.jpg" alt="">
+            </div>
+            <div class="box">
+              <p class="name shallan"><b>Shallan</b></p>
+              <a href="#message3" class="quote">
+                <p class="name renarin"><b>Renarin</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, corrupti.
+                </p>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error quam cumque sequi
+                excepturi, possimus blanditiis deserunt eaque nostrum sed itaque fugiat! Cum harum mollitia qui corrupti
+                voluptatum, omnis recusandae.</p>
+              <p class="time">10:03</p>
+            </div>
+          </div>
 
 
+          <div id="message6" class="message">
+            <div class="pfp">
+              <img src="https://catinaflat.blog/wp-content/uploads/2022/05/famous-tabby-cats.jpg" alt="">
+            </div>
+            <div class="box">
+              <p class="name adolin"><b>Adolin</b></p>
+              <audio controls>
+                <source src="./media/audio/audioAdri.mp3">
+                Your browser does not support the audio element.
+              </audio>
+              <p class="time">10:03</p>
+            </div>
+          </div>
 
-@media (max-width:1000px) {
-  content {
-    display: flex;
-    flex-direction: column;
-  }
+          <div id="message7" class="message sent">
+            <div class="box sent">
+              <p>eres imbécil<span class="time">10:03 <i class="fa-solid fa-check-double"></i></span>
+              </p>
+            </div>
+          </div>
 
-  #screen,
-  #sidebar {
-    width: 100%;
-  }
+          <div id="message8" class="message sent">
+            <div class="box sent">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate aspernatur ipsa facere
+                alias nesciunt dolorum animi ut nihil dolorem sit iste, placeat similique eius quasi id quo reiciendis
+                nam. Voluptate nihil, eligendi dicta recusandae soluta maxime ad rerum qui, sint maiores nam illo fuga!
+                Quidem impedit minus facilis maiores!</p><span class="time">10:03 <i
+                  class="fa-solid fa-check-double"></i></span>
 
-  #sidebar {
-    position: static;
-    margin: 0;
-    margin-bottom: 10px;
-  }
+            </div>
+          </div>
 
-  .nav-icons i {
-    padding: 15px;
-    width: 15px;
-  }
-}
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </content>
+
+  <footer>
+    <div class="credits">
+      <div>
+        <b>Writer</b>
+        <p>
+          <a href="">yuno</a>
+
+        </p>
+      </div>
+      <div>
+        <b>Voices</b>
+        <p><a href="">jaimito</a> as Adolin</p>
+        <p><a href="">jaimito</a> as Adolin</p>
+        <p><a href="">jaimito</a> as Adolin</p>
+        <p><a href="">jaimito</a> as Adolin</p>
+        <p><a href="">jaimito</a> as Adolin</p>
+      </div>
+
+    </div>
+  </footer>
+</body>
