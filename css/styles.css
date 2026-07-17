@@ -270,9 +270,8 @@ footer .credits div {
     margin-bottom: 10px;
   }
 
-  .nav-icons i {
-    padding: 15px;
-    width: 15px;
+  .nav-icons {
+display: none;
   }
 
   .message .box {
